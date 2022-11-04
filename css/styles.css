@@ -4,21 +4,23 @@
     padding: 0 auto;
     box-sizing: border-box;
     font-family: open;
-
 }
 
 /*    #FFFFFF        #F6F3EF     #CB673E        #BC4C2A   */
 
+body{
+    background-color: #F6F3EF;
+    object-fit: cover;
+}   
 
 
 
 
-
-/* nav */
+/* nav------------------------------------- */
 
 .logoInicio{
-    padding-left: 3em;
-    padding-right: 3em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 nav{
@@ -28,9 +30,8 @@ nav{
     justify-content: space-between;
     align-items:center;
     flex-wrap: nowrap;
-    background-color: white;
     font-size: 1.4em;
-    margin-top: 1em;
+    margin-top: 2em;
 }
 
 .menu-horizontal{
@@ -40,54 +41,58 @@ nav{
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
-    padding-left: 0;
+    width: 80em;
 }
 .menu-horizontal li{
     display: inline-block;
     position: relative;
-    margin-left: 3em ;
-    margin-right: 3em;
-    width: 5em;
+    width: 7em;
 }
 .menu-horizontal > li > a{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
+    color: #BC4C2A;
     text-decoration: none;
 }
 .menu-horizontal >li:hover{
-    background-color: rgb(204, 198, 198);
+    background-color: #e9e6e3;
+    border-radius: 5px;
 }
 .menu-vertical{
     position: absolute;
     display: none;
     list-style: none;
-    width: auto;
-    background-color: rgba(0, 0, 0, .5);
+    width: 10.8em;
+    background-color: #c273537a;
+    border-radius: 5px;
 }
 .menu-horizontal li:hover .menu-vertical{
     display: block;
 }
-.menu-vertical li:hover{
-    background-color: black;
-}
+
 .menu-vertical li a{
     display: block;
-    color: white;
+    color: rgb(3, 3, 3);
     padding: 10px 10px 10px 10px;
     text-decoration: none;
     flex-wrap: wrap;
+    width: 9em;
+    height: 2em;
+    margin: 3px;
+    border-bottom: solid 1px;
 }
 
 
 
 
-/* main-index */
+/* main-index---------------------------- */
 #carouselExampleIndicators{
-    padding-top: 6em;
-    width: 70em;
-    
+    padding-top: 3em;
+}
+#carouselExampleIndicators .carousel-inner img{
+    height: 40em;
+    object-fit: cover;
 }
 
 
@@ -96,56 +101,64 @@ nav{
 }
 
 
-.muestraInicio{
+#muestraInicio{
     display: flex;
     flex-direction: row;
     justify-content:center;
-    columns: 3;
-    width: 70em;
     margin-bottom: 5em;
     padding: 2em;
-    border: 1em;
-}
-.muestra{
-    padding: 1em 1em 1em 1em;
+    width: 80em;
 }
 
+#muestraInicio .muestra img{
+    object-fit: cover;
+    width: 35em;
+    height: 25em;
+    margin: 20px;
+    border-radius: 2em;
+    box-shadow: 0px 0px 12px 0px grey;
+}
 
 .infoInicio{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 70em;
+    width: 80em;
+    margin-top: 10em;
 }
 .imgInicio{
-    margin-left: 8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 .textoInicio{
-    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
     flex-wrap: wrap;
-    margin-right: 0.5em;
-    margin-left: 5em;
-    border-left: dashed;
-    padding-top: 2em;
-    padding-left: 3em;
+    width: 23em;
 }
 
 
 
 
-/* footer */
+/* footer----------------------------------- */
 footer{
+    margin-top: 10em;
     width: 70em;
+    height: 10em;   
 }
 .redes{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items:center;
-    margin-right: 43em;
+    margin-right: 55em;
 }
 .redes a{
-    padding: 1em 5em 1em 5em;
+    padding: 1em 8em 1em 8em;
 }
 
 
@@ -181,10 +194,44 @@ footer{
     color: white;
 }
 
-.columna2{
-    column-count: 2;
-    column-gap:200px;
+
+/* Telas----------------------------- */
+#infoTelas{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5em;
 }
+#infoTelas .imgTela{
+    width: 55em;
+    height: 37em;
+    padding: 0.7em 0.7em 0.7em 0.7em;
+    background-color: #CB673E;
+    border-bottom-right-radius: 4em;
+    border-top-left-radius: 4em;
+    box-shadow: 0px 0px 12px 0px grey;
+}
+#infoTelas .info{
+    margin-left: 2em;
+    margin-right: 20em;
+    margin-top: 5em;
+}
+
+.h1Telas{
+    padding-bottom: 0.5em;
+}
+.muestraColores{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1em;
+    
+}
+
+
+
+
+
 .carru{
     margin: 10em;
 }
@@ -202,7 +249,6 @@ footer{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    
 }
 
 
@@ -212,7 +258,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    max-width: 100%;
+    
 }
 
 .tituloMuestrario{
@@ -267,6 +313,7 @@ footer{
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
+        border-radius: 5em;
     }
     .g-img-5{
         grid-column: 1/2;
@@ -330,6 +377,7 @@ footer{
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
+        border-radius: 5em;
     }
     .g-img-5{
         grid-column: 1/2;
@@ -390,6 +438,7 @@ footer{
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
+        border-radius: 5em;
     }
     .g-img-5{
         grid-column: 1/2;
