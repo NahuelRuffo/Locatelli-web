@@ -150,125 +150,7 @@ footer{
 }
 
 
-@media(min-width:1024px){
-    .galeriaInicio{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr) 8em;
-    }
-    .galeriaInicio .img1{
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-    .galeriaInicio .img2{
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-    .galeriaInicio .img3{
-        grid-column: 3/4;
-        grid-row: 1/2;
-    }
-    .galeriaInicio .img4{
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-    .galeriaInicio .img5{
-        grid-column: 2/3;
-        grid-row: 2/3;
-    }
-    .galeriaInicio .img6{
-        grid-column: 3/4;
-        grid-row: 2/3;
-    }
-    .galeriaInicio .verMas{
-        padding: 1em 3em 1em 3em;
-        grid-column: 2/3;
-        grid-row: 3/4;
-    }
-}
 
-@media (min-width: 768px) and (max-width: 1023px){
-    .galeriaInicio{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr) 8em;
-    }
-    #muestraInicio img{
-        width: 25em;
-        height: 13em;
-    }
-    .galeriaInicio .img1{
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-    .galeriaInicio .img2{
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-    .galeriaInicio .img3{
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-    .galeriaInicio .img4{
-        grid-column: 2/3;
-        grid-row: 2/3;
-    }
-    .galeriaInicio .img5{
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
-    .galeriaInicio .img6{
-        grid-column: 2/3;
-        grid-row: 3/4;
-    }
-    .galeriaInicio .verMas{
-        padding: 1em 3em 1em 3em;
-        grid-column: 1/3;
-        grid-row: 4/5;
-    }
-}
-
-@media (min-width: 360px) and (max-width: 767px){
-    .galeriaInicio{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr) 8em;
-    }
-    #muestraInicio img{
-        width: 22em;
-        height: 10em;
-    }
-    #muestraInicio img{
-        width: 25em;
-        height: 13em;
-    }
-    .galeriaInicio .img1{
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-    .galeriaInicio .img2{
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-    .galeriaInicio .img3{
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-    .galeriaInicio .img4{
-        grid-column: 2/3;
-        grid-row: 2/3;
-    }
-    .galeriaInicio .img5{
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
-    .galeriaInicio .img6{
-        grid-column: 2/3;
-        grid-row: 3/4;
-    }
-    .galeriaInicio .verMas{
-        padding: 1em 3em 1em 3em;
-        grid-column: 1/3;
-        grid-row: 4/5;
-    }
-}
 
 #infoInicio{
     display: flex;
@@ -373,47 +255,7 @@ footer{
 .info h2{
     margin: 0;
 }
-@media(min-width:1024px){
-    
-}
-@media (min-width: 768px) and (max-width: 1023px){
-    #infoTelas{
-        flex-direction: column;
-        justify-content: flex-start;
-        width: 100%;
-        flex-wrap: wrap;
-    }
-    #infoTelas .imgTela{
-        width: 55em;
-    }
-    #infoTelas .info h2{
-        margin: 0;
-        font-size: 5em;
-    }
-    #infoTelas .info p{
-        margin: 0;
-        font-size: 2em;
-        flex-wrap: nowrap;
-    }
-}
-@media (min-width: 360px) and (max-width: 767px){
-    #infoTelas{
-        flex-direction: column;
-        justify-content: flex-start;
-        width: 100%;
-        flex-wrap: wrap;
-    }
-    #infoTelas .imgTela{
-        width: 55em;
-    }
-    #infoTelas .info h2{
-        font-size: 5em;
-    }
-    #infoTelas .info p{
-        font-size: 2em;
-        flex-wrap: nowrap;
-    }
-}
+
 
 
 /* sobre mi---------------------------------------------------------------------------------*/
@@ -444,7 +286,50 @@ footer{
     width: 100%;
 }
 
+
+
+/* contactos */
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 39em;
+    margin-top: 4em;
+    background-color: #bc4c2a1a;
+    border-radius: 2em;
+    box-shadow: 0px 0px 12px 0px grey;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 35em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+.infoYCon{
+    display: flex;
+    flex-direction: column;
+    width: 35em;
+    margin-top: 1.8em;
+}
+.form .mb-3{
+    width: 35em;
+}
+#footerContacto{
+    margin-top: 5em;
+    margin-bottom: 0;
+    height: 0;
+}
+
+
+
+
+
+
+
 @media(min-width:1024px){
+    /*muestrario*/
     #galeria{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(5, 1fr);
@@ -501,9 +386,44 @@ footer{
         grid-row: 5/6;
         width: 100%;
     }
+    /*index*/
+    .galeriaInicio{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr) 8em;
+    }
+    .galeriaInicio .img1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .galeriaInicio .img2{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .galeriaInicio .img3{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .galeriaInicio .img4{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .galeriaInicio .img5{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .galeriaInicio .img6{
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    .galeriaInicio .verMas{
+        padding: 1em 3em 1em 3em;
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    /*telas*/
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-    /*galeria*/
+    /*muestrario*/
     #galeria{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -564,8 +484,67 @@ footer{
         grid-row: 5/6;
         width: 100%;
     }
+
+    /*index*/
+    .galeriaInicio{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr) 8em;
+    }
+    #muestraInicio img{
+        width: 25em;
+        height: 13em;
+    }
+    .galeriaInicio .img1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .galeriaInicio .img2{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .galeriaInicio .img3{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .galeriaInicio .img4{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .galeriaInicio .img5{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .galeriaInicio .img6{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    .galeriaInicio .verMas{
+        padding: 1em 3em 1em 3em;
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+    /*telas*/
+    #infoTelas{
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    #infoTelas .imgTela{
+        width: 55em;
+    }
+    #infoTelas .info h2{
+        margin: 0;
+        font-size: 5em;
+    }
+    #infoTelas .info p{
+        margin: 0;
+        font-size: 2em;
+        flex-wrap: nowrap;
+    }
 }
 @media (min-width: 360px) and (max-width: 767px) {
+    /*muestrario*/
     #galeria{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(5, 1fr);
@@ -618,37 +597,63 @@ footer{
         grid-column: 3/4;
         grid-row: 5/6;
     }
-}
-/* contactos */
-.contacto{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 39em;
-    margin-top: 4em;
-    background-color: #bc4c2a1a;
-    border-radius: 2em;
-    box-shadow: 0px 0px 12px 0px grey;
-}
-.form{
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    width: 35em;
-    margin-top: 1em;
-    margin-bottom: 2em;
-}
-.infoYCon{
-    display: flex;
-    flex-direction: column;
-    width: 35em;
-    margin-top: 1.8em;
-}
-.form .mb-3{
-    width: 35em;
-}
-#footerContacto{
-    margin-top: 5em;
-    margin-bottom: 0;
-    height: 0;
+    /*index*/
+    .galeriaInicio{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr) 8em;
+    }
+    #muestraInicio img{
+        width: 22em;
+        height: 10em;
+    }
+    #muestraInicio img{
+        width: 25em;
+        height: 13em;
+    }
+    .galeriaInicio .img1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .galeriaInicio .img2{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .galeriaInicio .img3{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .galeriaInicio .img4{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .galeriaInicio .img5{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .galeriaInicio .img6{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    .galeriaInicio .verMas{
+        padding: 1em 3em 1em 3em;
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+    /*telas*/
+    #infoTelas{
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    #infoTelas .imgTela{
+        width: 55em;
+    }
+    #infoTelas .info h2{
+        font-size: 5em;
+    }
+    #infoTelas .info p{
+        font-size: 2em;
+        flex-wrap: nowrap;
+    }
 }
