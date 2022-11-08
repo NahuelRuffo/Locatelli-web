@@ -35,32 +35,39 @@
         </nav>
     </header>
 
-    <main>
-        <h1>Informacion & consultas</h1>
-        <h2>datos de contacto</h2>
-        <h4>+54 11 6651-7903</h4>
-        <h4>Moon of rome@hotmail.com</h4>
-        <h4>Argentina, Buenos aires, Ituzaingo</h4>
-
-        <section>
-            <form action="">
-                <input type="text" id="nombreApellido" name="nombre-apellido" placeholder="Nombre y apellido">
-                <br>
-                <input type="text" id="correo" name="correo" placeholder="Correo">
-                <br>
-                <input type="tel" id="telefono" name="telefono" placeholder="Telefono">
-                <br>
-                <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                <br>
-                <input type="submit" value="Enviar">
-            </form>
+    <main class="container">
+        <section class="contacto">
+            <div class="infoYCon">
+                <h1>Informacion & consultas</h1>
+                <h2>Datos de contacto</h2>
+                <h5>+54 11 6651-7903</h5>
+                <h5>Moon of rome@hotmail.com</h5>
+                <h5>Argentina, Buenos aires, Ituzaingo</h5>
+            </div>
+            <div>
+                <form action="" class="form">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre y apellido">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Telefono">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Tucorreo@hotmail.com">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-light">Enviar</button>
+                    </div>
+                </form>
+            </div>
         </section>
-
-
     </main>
 
 
-    <footer class="container">
+    <footer id="footerContacto" class="container">
         <div class="redes">
             <a href="https://www.instagram.com/moon_of_rome/" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#BC4C2A" class="bi bi-instagram" viewBox="0 0 16 16">

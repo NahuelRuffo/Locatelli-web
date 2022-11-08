@@ -10,13 +10,13 @@
 
 body{
     background-color: #F6F3EF;
-    object-fit: cover;
+    
 }   
 
 
 
 
-/* nav------------------------------------- */
+/* nav------------------------------------------------------------------------------------ */
 
 .logoInicio{
     padding-left: 1em;
@@ -83,10 +83,21 @@ nav{
     border-bottom: solid 1px;
 }
 
+/* footer--------------------------------------------------------------------------------- */
+footer{
+    margin-top: 10em;
+    
+    height: 10em;   
+}
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 
 
-
-/* main-index---------------------------- */
+/* index---------------------------------------------------------------------------------- */
 #carouselExampleIndicators{
     margin-top: 5em;
     box-shadow: 0px 0px 12px 0px grey;
@@ -94,7 +105,6 @@ nav{
 #carouselExampleIndicators .carousel-inner img{
     height: 40em;
     object-fit: cover;
-    
 }
 
 .productosIndex{
@@ -138,20 +148,8 @@ nav{
     display: grid;
     align-items: flex-end;
 }
-.verMas{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 1em 3em 1em 3em;
-    background-color: #BC4C2A;
-    border-radius: 1em;
 
-}
-.verMas a{
-    text-decoration: none;
-    color: black;
-    font-size: 2em;
-}
+
 @media(min-width:1024px){
     .galeriaInicio{
         grid-template-columns: repeat(3, 1fr);
@@ -297,21 +295,8 @@ nav{
 
 
 
-/* footer----------------------------------- */
-footer{
-    margin-top: 10em;
-    width: 70em;
-    height: 10em;   
-}
-.redes{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
 
-
-/* telas-----------------------------------*/
+/* telas-----------------------------------------------------------------------------------*/
 .red {
     color: red ;
 }
@@ -341,10 +326,12 @@ footer{
 #infoTelas{
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     margin-top: 5em;
+    width: 100%;
 }
 #infoTelas .imgTela{
-    width: 55em;
+    width: 50em;
     height: 37em;
     padding: 0.7em 0.7em 0.7em 0.7em;
     background-color: #CB673E;
@@ -353,28 +340,87 @@ footer{
     box-shadow: 0px 0px 12px 0px grey;
 }
 #infoTelas .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:flex-start ;
     margin-left: 2em;
-    margin-right: 20em;
     margin-top: 5em;
+    padding: 1em;
+    background-color: #bc4c2a1a;
+    border-radius: 2em;
+}
+#infoTelas .info p{
+    margin: 0;
 }
 
 .h1Telas{
-    padding-bottom: 0.5em;
+    margin-left: 0.5em;
+    margin-bottom: 0.2em;
+    font-size: 4em;
 }
 .muestraColores{
     display: grid;
-    justify-content: center;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-gap: 1em;
+    grid-gap: 0.5em;
+    width: 15em;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.123);
+    padding: 1em;
+    border-radius: 1em;
+}
+.info h2{
+    margin: 0;
+}
+@media(min-width:1024px){
     
 }
+@media (min-width: 768px) and (max-width: 1023px){
+    #infoTelas{
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    #infoTelas .imgTela{
+        width: 55em;
+    }
+    #infoTelas .info h2{
+        margin: 0;
+        font-size: 5em;
+    }
+    #infoTelas .info p{
+        margin: 0;
+        font-size: 2em;
+        flex-wrap: nowrap;
+    }
+}
+@media (min-width: 360px) and (max-width: 767px){
+    #infoTelas{
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    #infoTelas .imgTela{
+        width: 55em;
+    }
+    #infoTelas .info h2{
+        font-size: 5em;
+    }
+    #infoTelas .info p{
+        font-size: 2em;
+        flex-wrap: nowrap;
+    }
+}
 
-/* sobre mi */
+
+/* sobre mi---------------------------------------------------------------------------------*/
 
 
 
-/* -----------------------------muestrario---------------------------- */
+/* muestrario----------------------------------------------------------------------------- */
 
 .tituloMuestrario{
     display: flex;
@@ -456,8 +502,6 @@ footer{
         width: 100%;
     }
 }
-
-
 @media (min-width: 768px) and (max-width: 1023px) {
     /*galeria*/
     #galeria{
@@ -521,8 +565,6 @@ footer{
         width: 100%;
     }
 }
-
-
 @media (min-width: 360px) and (max-width: 767px) {
     #galeria{
         grid-template-columns: repeat(3, 1fr);
@@ -577,17 +619,36 @@ footer{
         grid-row: 5/6;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* contactos *
+/* contactos */
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 39em;
+    margin-top: 4em;
+    background-color: #bc4c2a1a;
+    border-radius: 2em;
+    box-shadow: 0px 0px 12px 0px grey;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 35em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+.infoYCon{
+    display: flex;
+    flex-direction: column;
+    width: 35em;
+    margin-top: 1.8em;
+}
+.form .mb-3{
+    width: 35em;
+}
+#footerContacto{
+    margin-top: 5em;
+    margin-bottom: 0;
+    height: 0;
+}
