@@ -12,9 +12,9 @@
 </head>
 <body>
     <header class="container">
-        <nav>
+        <nav id="navD">
             <ul class="menu-horizontal">
-                <li><a href="#">Muestrario</a></li>
+                <li><a href="./muestrario.html">Muestrario</a></li>
                 <li>
                     <a href="./telas.html">Telas</a>
                     <ul class="menu-vertical">
@@ -24,14 +24,51 @@
                         <li><a href="">Camuflado</a></li>
                     </ul>
                 </li>
-                <div>
+                <div class="imagenNav">
                     <a class="logoInicio" href="../index.html" >
-                        <img src="../assets/img/logo.png" width = "250em"alt="">
+                        <img src="../assets/img/logo.png" alt="logo">
                     </a>
                 </div>
                 <li><a href="./contacto.html">Contacto</a></li>
                 <li><a href="./sobremi.html">Sobre mi</a></li>
             </ul>
+        </nav>
+
+        <nav id="navM" class="navbar bg-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../assets/img/logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <a href="../index.html"><img src="../assets/img/logo.png" alt="logo" width="120em"></a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./muestrario.html">Muestrario</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">Contactos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./sobremi.html">sobre mi</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="./pages/telas.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Telas</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./pages/telas.html">Action</a></li>
+                                    <li><a class="dropdown-item" href="./pages/telas.html">Another action</a></li>
+                                    <li><a class="dropdown-item" href="./pages/telas.html">Another action</a></li>
+                                    <li><a class="dropdown-item" href="./pages/telas.html">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -39,6 +76,7 @@
         <section class="mainMuestrario">
             <h1 class="tituloMuestrario">Muestrario</h1>
             <div id="galeria">
+                <img src="../assets/img/galeria 1.jpg" alt="galeria 0" class="g-img-0">
                 <img src="../assets/img/galeria 1.jpg" alt="galeria 1" class="g-img-1">
                 <img src="../assets/img/galeria 2.jpg" alt="galeria 2" class="g-img-2">
                 <img src="../assets/img/galeria 3.jpg" alt="galeria 3" class="g-img-3">

@@ -1,0 +1,16 @@
+.sobreMi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6em;
+
+        & .perfil{
+            font-size: large;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 20em;
+            margin-top: 2em;
+        }
+}
