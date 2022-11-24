@@ -65,6 +65,8 @@ nav{
     width: 10.8em;
     background-color: #c273537a;
     border-radius: 5px;
+    padding-left: 0px;
+    text-align: center;
 }
 .menu-horizontal li:hover .menu-vertical{
     display: block;
@@ -77,8 +79,6 @@ nav{
     text-decoration: none;
     flex-wrap: wrap;
     width: 9em;
-    height: 2em;
-    margin: 3px;
     border-bottom: solid 1px;
 }
 .imagenNav{
