@@ -1,1 +1,104 @@
-/*# sourceMappingURL=main.css.map */
+.sobreMi {
+  margin-top: 6em;
+}
+.sobreMi .foto {
+  display: flex;
+  flex-direction: column;
+}
+.sobreMi .foto img {
+  margin-top: 1em;
+  width: 70%;
+  box-shadow: 0px 0px 12px 0px grey;
+  border-radius: 50%;
+}
+.sobreMi .perfil {
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20em;
+  margin-top: 2em;
+}
+.sobreMi .perfil h2 {
+  font-size: 2em;
+  margin: 0;
+}
+.sobreMi .perfil hr {
+  width: 20em;
+  margin: 0;
+}
+.sobreMi .perfil h1 {
+  font-size: 1.5em;
+}
+.sobreMi .perfil .descripcion {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 0.5em;
+}
+.sobreMi .perfil .descripcion h3 {
+  font-size: 1em;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .sobreMi {
+    margin-top: 1em;
+  }
+  .sobreMi .foto img {
+    width: 50%;
+  }
+  .sobreMi .perfil {
+    width: 30em;
+  }
+  .sobreMi .perfil h2 {
+    font-size: 3em;
+    margin: 0;
+  }
+  .sobreMi .perfil hr {
+    width: 30em;
+    margin: 0;
+  }
+  .sobreMi .perfil h1 {
+    font-size: 2em;
+  }
+  .sobreMi .perfil .descripcion {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 0.5em;
+  }
+  .sobreMi .perfil .descripcion h3 {
+    font-size: 1.4em;
+  }
+}
+@media (min-width: 1024px) {
+  .sobreMi {
+    margin-top: 2em;
+  }
+  .sobreMi .foto img {
+    width: 50%;
+  }
+  .sobreMi .perfil {
+    width: 30em;
+  }
+  .sobreMi .perfil h2 {
+    font-size: 3em;
+    margin: 0;
+  }
+  .sobreMi .perfil hr {
+    width: 30em;
+    margin: 0;
+  }
+  .sobreMi .perfil h1 {
+    font-size: 2em;
+  }
+  .sobreMi .perfil .descripcion {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 0.5em;
+  }
+  .sobreMi .perfil .descripcion h3 {
+    font-size: 1.4em;
+  }
+}/*# sourceMappingURL=main.css.map */

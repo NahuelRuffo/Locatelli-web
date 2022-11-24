@@ -1,0 +1,129 @@
+.sobreMi{
+    margin-top: 6em;
+        & .foto{
+            display: flex;
+            flex-direction: column;
+
+                & img{
+                    margin-top: 1em;
+                    width: 70%;
+                    box-shadow: 0px 0px 12px 0px grey;
+                    border-radius: 50%;
+                }
+        }
+
+        & .perfil{
+            font-size: large;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 20em;
+            margin-top: 2em;
+
+            & h2{
+                font-size: 2em;
+                margin: 0;
+            }
+
+            & hr{
+                width: 20em;
+                margin: 0;
+            }
+
+            & h1{
+                font-size: 1.5em;
+            }
+
+            & .descripcion{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                margin-top: 0.5em;
+                
+                & h3{
+                    font-size: 1em;
+                }
+            }
+        }
+
+}
+@media (min-width: 768px) and (max-width: 1023px){
+    .sobreMi{
+        margin-top: 1em;
+
+        & .foto{
+            & img{
+                width: 50%;
+            }
+        }
+
+        & .perfil{
+            width: 30em;
+
+            & h2{
+                font-size: 3em;
+                margin: 0;
+            }
+
+            & hr{
+                width: 30em;
+                margin: 0;
+            }
+
+            & h1{
+                font-size: 2em;
+            }
+
+            & .descripcion{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                margin-top: 0.5em;
+                
+                & h3{
+                    font-size: 1.4em;
+                }
+            }
+        }
+    }
+}
+@media(min-width:1024px){
+    .sobreMi{
+        margin-top: 2em;
+
+        & .foto{
+            & img{
+                width: 50%;
+            }
+        }
+
+        & .perfil{
+            width: 30em;
+
+            & h2{
+                font-size: 3em;
+                margin: 0;
+            }
+
+            & hr{
+                width: 30em;
+                margin: 0;
+            }
+
+            & h1{
+                font-size: 2em;
+            }
+
+            & .descripcion{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                margin-top: 0.5em;
+                
+                & h3{
+                    font-size: 1.4em;
+                }
+            }
+        }
+    }
+}
