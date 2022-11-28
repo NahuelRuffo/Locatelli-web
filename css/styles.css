@@ -111,13 +111,13 @@ footer{
 #carouselExampleIndicators{
     margin-top: 5em;
     box-shadow: 0px 0px 12px 0px grey;
-    width: 90em;
+    width: 190vh;
+    height: auto;
 }
 
 #carouselExampleIndicators .carousel-inner img{
     object-fit: cover;
     width: 100%;
-    height: 60vh;
 }
 
 .productosIndex{
@@ -136,21 +136,21 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 0 1em 0 1em;
 }
 
 .galeriaInicio{
     display: grid;
     align-items: flex-end;
-    width: 100%;
+    gap: 5em;
 }
 
 #muestraInicio .galeriaInicio .muestra img{
     object-fit: cover;
     width: 30em;
-    height: 20em;
+    height: auto;
     margin: 20px;
     border-radius: 2em;
-    box-shadow: 0px 0px 12px 0px grey;
     -webkit-transform: scale(1);
     transform: scale(1);
     -webkit-transition: .3s ease-in-out;
@@ -167,7 +167,7 @@ footer{
 
 #infoInicio{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     width: 80em;
     margin-top: 10em;
@@ -176,6 +176,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 4em;
 
 }
 .textoInicio{
@@ -272,11 +273,6 @@ footer{
 .info h2{
     margin: 0;
 }
-
-
-
-/* sobre mi---------------------------------------------------------------------------------*/
-
 
 
 /* muestrario----------------------------------------------------------------------------- */
@@ -404,7 +400,10 @@ footer{
     .galeriaInicio{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr) 8em;
-        gap: 1em;
+        
+    }
+    #muestraInicio .galeriaInicio .muestra img{
+        margin: 0;
     }
     #muestraInicio img{
         width: 28em;
@@ -522,10 +521,10 @@ footer{
     .galeriaInicio{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr) 8em;
+        gap: 1em;
     }
-    #muestraInicio img{
-        width: 22em;
-        height: 13em;
+    #muestraInicio .galeriaInicio .muestra img{
+        margin: 0;
     }
     .galeriaInicio .img1{
         grid-column: 1/2;
@@ -612,9 +611,9 @@ footer{
         width: 100%;
     }
 
-    #navM .container-fluid .navbar-brand{
-        width: 6em;
-        margin-right: 6em;
+
+    #navM .container-fluid .navbar img{
+        width: 8em;
     }
 
     .productosIndex{
@@ -689,16 +688,23 @@ footer{
     }
 
     /*index*/
+    
+    #carouselExampleIndicators .carousel-inner img{
+        object-fit: cover;
+        width: 100%;
+    }
+
+
     .galeriaInicio{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr) 8em;
-    }
-    #muestraInicio .galeriaInicio img{
-        width: 10.5em;
-        height: 10em;
-        margin: 0.3em;
-    }
+        gap: 1em;
 
+    }
+    #muestraInicio .galeriaInicio .muestra img{
+        height: auto;
+        max-width: 80%;
+    }
     .galeriaInicio .img1{
         grid-column: 1/2;
         grid-row: 1/2;
@@ -778,6 +784,11 @@ footer{
     }
     #infoTelas .info p{
         font-size: 2em;
+    }
+
+    /*contacto*/
+    .contacto{
+        margin-top: 9em;
     }
 
 }
