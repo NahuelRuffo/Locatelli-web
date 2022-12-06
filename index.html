@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Moon of rome - Inicio</title>
+    <title>Portafolio - Inicio</title>
     <meta name="description" content="Diseño y fabricacion textil.">
     <meta name="keywords" content="mochilas, carteras, marroquineria, telas">
     
@@ -21,14 +21,13 @@
                 <li>
                     <a href="./pages/telas.html">Telas</a>
                     <ul class="menu-vertical">
-                        <li><a href="">Cuerina</a></li> 
-                        <li><a href="">Cordura nacional</a></li>
-                        <li><a href="">Cordura estampada</a></li>
-                        <li><a href="">Camuflado</a></li>
+                        <li><a href="./pages/rojo.html">Cuerina roja</a></li> 
+                        <li><a href="./pages/azul.html">Cordura azul</a></li>
+                        <li><a href="./pages/naranja.html">Cordura naranja</a></li>
                     </ul>
                 </li>
                 <div class="imagenNav">
-                    <a class="logoInicio" href="#" >
+                    <a class="logoInicio" href="./index.html" >
                         <img src="./assets/img/logo.png" alt="logo">
                     </a>
                 </div>
@@ -39,13 +38,14 @@
 
         <nav id="navM" class="navbar bg-light fixed-top">
             <div class="container-fluid">
-                <a class="navbar" href="./index.html"><img src="./assets/img/logo.png" alt="logo"></a>
+                <a class="navbar" href="../index.html"><img src="../assets/img/logo.png" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
-                        <a href="./index.html"><img src="./assets/img/logo.png" alt="logo" width="120em"></a>
+                        <a href="../index.html"><img src="../assets/img/logo.png" alt="logo" width="120em"></a>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
@@ -53,20 +53,24 @@
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="./pages/muestrario.html">Muestrario</a>
                             </li>
+
                             <li class="nav-item">
                                 <a class="nav-link" href="./pages/contacto.html">Contactos</a>
                             </li>
+
                             <li class="nav-item">
                                 <a class="nav-link" href="./pages/sobremi.html">sobre mi</a>
                             </li>
+
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="./pages/telas.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Telas</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="./pages/telas.html">Action</a></li>
-                                    <li><a class="dropdown-item" href="./pages/telas.html">Another action</a></li>
-                                    <li><a class="dropdown-item" href="./pages/telas.html">Another action</a></li>
-                                    <li><a class="dropdown-item" href="./pages/telas.html">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="./rojo.html">Rojo</a></li>
+                                    <li><a class="dropdown-item" href="./azul.html">Azul</a></li>
+                                    <li><a class="dropdown-item" href="./naranja.html">naranaja</a></li>
+                                    <li><a class="dropdown-item" href="./telas.html">verde</a></li>
                                 </ul>
+
                             </li>
                         </ul>
                     </div>
@@ -85,18 +89,18 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active" >
-                            <img src="./assets/img/carru-1.svg" alt="bienvenida a mi web">
+                            <img src="./assets/img/carru-1.png" alt="bienvenida a mi web">
                     </div>
 
                     <div class="carousel-item">
                         <a href="https://www.facebook.com/profile.php?id=100068758916134" target="_blank">
-                            <img src="./assets/img/carru-2.svg" alt="feria mundialito">
+                            <img src="./assets/img/carru-2.png" alt="feria mundialito">
                         </a>
                     </div>
 
                     <div class="carousel-item">
                         <a href="./pages/muestrario.html" target="_blank">
-                            <img src="./assets/img/carru-3.svg" alt="propuesta para ver mas productos">
+                            <img src="./assets/img/carru-3.png" alt="propuesta para ver mas productos">
                         </a>
                     </div>
                 </div>
@@ -105,6 +109,41 @@
                     <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section id="carruselM">
+            <div id="carouselExampleIndicatorsM" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicatorsM" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicatorsM" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicatorsM" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" >
+                            <img src="./assets/img/movil-carru-1.png" alt="bienvenida a mi web">
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="./pages/muestrario.html">
+                            <img src="./assets/img/movil-carru-2.png" alt="feria mundialito">
+                        </a>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="https://www.facebook.com/profile.php?id=100068758916134" target="_blank">
+                            <img src="./assets/img/movil-carru-3.png" alt="propuesta para ver mas productos">
+                        </a>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicatorsM" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicatorsM" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
@@ -139,9 +178,6 @@
                     </div>
             </div>
         </section>
-
-        
-
     </main>
 
     <footer class="container">
